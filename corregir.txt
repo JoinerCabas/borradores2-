@@ -1,0 +1,32 @@
+casos=int(input())
+contador=0
+while True:
+    if(casos==contador):
+        break
+    contador=contador+1
+    jugada=input()
+    opcionA,opcionB=jugada.split(" ")
+    if(opcionA=="tijeras" and opcionB=="papel"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="papel" and opcionB=="piedra"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="lagarto" and opcionB=="Holk"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="Holk" and opcionB=="tijeras"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="tijeras" and opcionB=="lagarto"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="lagarto" and opcionB=="papel"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="papel" and opcionB=="Holk"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif (opcionA=="Holk" and opcionB=="piedra"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA=="piedra" and opcionB=="tijeras"):
+        print (f"Caso # {contador}: ¡LaVidaEsdura!")
+    elif(opcionA==opcionB):
+        print (f"Caso # {contador}: ¡Otra vez!")
+    else:
+        print (f"Caso # {contador}:¡No es suerte, es el árbitro!")
+ 
+ 
